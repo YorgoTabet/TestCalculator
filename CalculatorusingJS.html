@@ -1,0 +1,95 @@
+<style>
+
+
+table, th ,td{
+
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0;
+    
+    
+
+}
+table{
+    height: 100%;
+    width: 100%;
+}
+
+#calc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -125px;
+    width: 250px;
+    height: 300px;
+}
+button {
+
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    
+
+}
+#equalsBtn{
+
+    height: 150%;
+    
+    
+}
+#ioArea{
+    background-color: grey;
+    height: 50px;
+    color: black;
+}
+
+</style>
+
+
+<diV id="calc">
+
+<table>
+    <tr>
+        <th colspan="4" id="ioArea"></th>
+    </tr>
+    <tr>
+        <td> <button id="cBtn" onclick="buttonpressed(event)">C</button> </td>
+        <td> <button id="divBtn" onclick="buttonpressed(event)"  >/</button> </td>
+        <td> <button id="multBtn" onclick="buttonpressed(event)"  >x</button> </td>
+        <td> <button id="backBtn" onclick="buttonpressed(event)" >back</button> </td>
+    </tr>
+    <tr>
+        <td> <button id="7Btn" onclick="buttonpressed(event)" >7</button> </td>
+        <td> <button id="8Btn"  onclick="buttonpressed(event)" >8</button> </td>
+        <td> <button id="9Btn"  onclick="buttonpressed(event)" >9</button> </td>
+        <td> <button id="minBtn"  onclick="buttonpressed(event)" >-</button> </td>
+    </tr>
+    <tr>
+        <td> <button id="4Btn" onclick="buttonpressed(event)" >4</button> </td>
+        <td> <button id="5Btn"  onclick="buttonpressed(event)" >5</button> </td>
+        <td> <button id="6Btn" onclick="buttonpressed(event)" >6</button> </td>
+        <td> <button id="plusBtn" onclick="buttonpressed(event)" >+</button> </td>
+    </tr>
+    <tr>
+        <td> <button id="1Btn" onclick="buttonpressed(event)" >1</button> </td>
+        <td> <button id="2Btn" onclick="buttonpressed(event)" >2</button> </td>
+        <td> <button id="3Btn" onclick="buttonpressed(event)" >3</button> </td>
+        <td rowspan="2" id="equalsBtn" onclick="buttonpressed(event)" > <button>=</button> </td>
+    </tr>
+    <tr>
+        <td>   <button id="modBtn" onclick="buttonpressed(event)" >%</button> </td>
+        <td> <button id="0Btn" onclick="buttonpressed(event)" >0</button> </td>
+        <td> <button id="decBtn" onclick="buttonpressed(event)" >.</button> </td>
+        
+    </tr>
+</table>
+
+
+
+</diV>
+
+
+<script src="calculator.js"></script>
